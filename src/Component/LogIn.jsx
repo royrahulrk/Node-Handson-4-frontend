@@ -21,7 +21,7 @@ const LoginForm = () => {
 
     // Make the API call here using axios or any other library
     axios
-      .post('https://login-signup-b.onrender.com/login', { email, password })
+      .get('https://login-signup-b.onrender.com/login', { email, password })
       .then((response) => {
         console.log(response.data); 
       })
